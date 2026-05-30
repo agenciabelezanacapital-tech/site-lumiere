@@ -1398,4 +1398,93 @@ footer {
     width: 52px;
     height: 52px;
   }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 240px;
+  }
+
+  .gallery-item--tall {
+    grid-row: span 1;
+  }
+}
+
+/* ============================================
+   LOGO IMAGE
+============================================ */
+.nav-logo-img {
+  height: 64px;
+  width: auto;
+  display: block;
+}
+
+.footer-brand .nav-logo-img {
+  filter: brightness(0) invert(1);
+  height: 48px;
+}
+
+/* ============================================
+   HERO PHOTO
+============================================ */
+.hero-photo-card {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  aspect-ratio: 3/4;
+  width: 100%;
+}
+
+.hero-photo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ============================================
+   GALLERY
+============================================ */
+.gallery {
+  background: var(--white);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 260px;
+  gap: 16px;
+}
+
+.gallery-item {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  display: block;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.06);
+}
+
+.gallery-item--tall {
+  grid-row: span 2;
+}
+
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 200px;
+  }
+
+  .gallery-item--tall {
+    grid-row: span 1;
+  }
 }

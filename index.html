@@ -62,7 +62,9 @@
   ============================================ -->
   <header id="header">
     <nav>
-      <a href="#" class="nav-logo">Lumière <span>Beauty</span></a>
+      <a href="#" class="nav-logo">
+        <img src="images/logo%20lumiere.svg" alt="Lumière Beauty House" class="nav-logo-img" />
+      </a>
       <ul class="nav-links">
         <li><a href="#servicos">Serviços</a></li>
         <li><a href="#diferenciais">Por que nós</a></li>
@@ -137,21 +139,27 @@
               Quero meu Mega Hair →
             </a>
             <a href="#servicos" class="btn btn-outline btn-lg">Ver serviços</a>
+            <a
+              href="https://www.instagram.com/lumierebeautyhouse_"
+              class="btn btn-outline btn-lg"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Ver Instagram da Lumière Beauty House"
+            >
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <circle cx="12" cy="12" r="4"/>
+                <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/>
+              </svg>
+              Instagram
+            </a>
           </div>
         </div>
 
         <div class="hero-visual fade-in fade-in-delay-2">
           <div class="hero-card-group">
-            <div class="hero-main-card">
-              <div class="card-icon">
-                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" width="40" height="40">
-                  <path d="M24 8C24 8 14 12 14 22C14 28.627 18.373 34 24 34C29.627 34 34 28.627 34 22C34 12 24 8Z" fill="rgba(255,255,255,0.5)" stroke="white" stroke-width="1.5"/>
-                  <path d="M20 34C20 34 20 40 24 40C28 40 28 34 28 34" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-                  <path d="M18 22C18 22 20 20 24 20C28 20 30 22 30 22" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-                </svg>
-              </div>
-              <h3>Mega Hair Natural</h3>
-              <p>Cabelo 100% natural com resultado impecável e duradouro</p>
+            <div class="hero-photo-card">
+              <img src="images/iza.JPEG" alt="Especialista em mega hair na Lumière Beauty House, Sudoeste Brasília" />
             </div>
             <div class="hero-float-card hero-float-card-1">
               <div class="float-dot"></div>
@@ -497,6 +505,39 @@
     </section>
 
     <!-- ============================================
+         GALLERY
+    ============================================ -->
+    <section class="section gallery" id="galeria" aria-label="Galeria de transformações Lumière Beauty House">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-label">Nosso trabalho</span>
+          <h2 class="section-title fade-in">Transformações Reais</h2>
+          <p class="section-subtitle fade-in fade-in-delay-1">
+            Cada resultado é único. Conheça alguns dos trabalhos que realizamos com amor e dedicação.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item gallery-item--tall fade-in">
+            <img src="images/iza.JPEG" alt="Profissional Lumière Beauty House mega hair Sudoeste Brasília" loading="lazy" />
+          </div>
+          <div class="gallery-item fade-in fade-in-delay-1">
+            <img src="images/loira.JPEG" alt="Coloração loira Lumière Beauty House Brasília" loading="lazy" />
+          </div>
+          <div class="gallery-item fade-in fade-in-delay-2">
+            <img src="images/cabelo2.JPEG" alt="Mega hair natural resultado Lumière Beauty House" loading="lazy" />
+          </div>
+          <div class="gallery-item fade-in fade-in-delay-3">
+            <img src="images/cortedepontas.JPEG" alt="Corte de pontas Lumière Beauty House Sudoeste Brasília" loading="lazy" />
+          </div>
+          <div class="gallery-item fade-in fade-in-delay-4">
+            <img src="images/unha.JPEG" alt="Unhas Lumière Beauty House Brasília" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
          LOCATION
     ============================================ -->
     <section class="section location" id="localizacao" aria-label="Localização e contato">
@@ -578,7 +619,7 @@
 
           <div class="map-container fade-in fade-in-delay-2" aria-label="Mapa de localização Lumière Beauty House Sudoeste Brasília">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.294!2d-47.9246!3d-15.7834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3b8bc7e6de09%3A0x1!2sCLSW+102+Bloco+A+Loja+58%2C+Sudoeste%2C+Bras%C3%ADlia+-+DF%2C+70670-511!5e0!3m2!1spt-BR!2sbr!4v1690000000000!5m2!1spt-BR!2sbr"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120!2d-47.9246!3d-15.7834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f18.1!3m3!1m2!1s0x935a3077e0cb95e9%3A0xbb3d032e7eacbd7d!2sLumi%C3%A8re%20Beauty%20House!5e0!3m2!1spt-BR!2sbr!4v1690000000000!5m2!1spt-BR!2sbr"
               loading="lazy"
               allowfullscreen
               referrerpolicy="no-referrer-when-downgrade"
@@ -711,6 +752,20 @@
             </svg>
             Agendar pelo WhatsApp
           </a>
+          <a
+            href="https://www.instagram.com/lumierebeautyhouse_"
+            class="btn btn-white btn-lg"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Ver Instagram da Lumière Beauty House"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/>
+            </svg>
+            Ver Instagram
+          </a>
         </div>
       </div>
     </section>
@@ -725,7 +780,9 @@
       <div class="footer-inner">
 
         <div class="footer-brand">
-          <div class="nav-logo">Lumière <span>Beauty</span></div>
+          <div class="nav-logo">
+            <img src="images/logo%20lumiere.svg" alt="Lumière Beauty House" class="nav-logo-img footer-logo-img" />
+          </div>
           <p>Especialistas em mega hair no Sudoeste de Brasília. Naturalidade que transforma vidas.</p>
           <div class="footer-social" aria-label="Redes sociais">
             <a href="https://wa.me/5561982280500" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp da Lumière Beauty House">
@@ -733,7 +790,7 @@
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.570-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zm-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884zm8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
               </svg>
             </a>
-            <a href="#" class="social-link" aria-label="Instagram da Lumière Beauty House">
+            <a href="https://www.instagram.com/lumierebeautyhouse_" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram da Lumière Beauty House">
               <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true">
                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
                 <circle cx="12" cy="12" r="4"/>
