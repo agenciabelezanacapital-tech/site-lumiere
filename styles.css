@@ -578,6 +578,111 @@ nav {
 }
 
 /* ============================================
+   COMO FUNCIONA
+============================================ */
+.how {
+  background: var(--white);
+}
+
+.how-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.how-step {
+  position: relative;
+  background: var(--cream);
+  border: 1px solid var(--sage-light);
+  border-radius: var(--radius-md);
+  padding: 40px 28px 32px;
+  transition: all var(--transition);
+}
+
+.how-step:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--blush-light);
+}
+
+.how-step-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--blush-pale);
+  color: var(--rose-gold);
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.how-step h3 {
+  font-size: 1.35rem;
+  margin-bottom: 10px;
+}
+
+.how-step p {
+  font-size: 0.92rem;
+  color: var(--text-mid);
+  line-height: 1.65;
+  margin: 0;
+}
+
+.how-notice {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  background: var(--blush-pale);
+  border-left: 4px solid var(--rose-gold);
+  border-radius: var(--radius-md);
+  padding: 28px 32px;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.how-notice-icon {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--white);
+  color: var(--rose-gold);
+}
+
+.how-notice-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.how-notice-text strong {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--brown);
+  margin-bottom: 8px;
+}
+
+.how-notice-text p {
+  font-size: 0.95rem;
+  color: var(--text-mid);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.how-notice-text b {
+  color: var(--brown);
+  font-weight: 600;
+}
+
+/* ============================================
    SERVICES
 ============================================ */
 .services {
@@ -1301,6 +1406,10 @@ footer {
    RESPONSIVE
 ============================================ */
 @media (max-width: 1024px) {
+  .how-steps {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .why-inner {
     grid-template-columns: 1fr;
     gap: 48px;
@@ -1377,6 +1486,16 @@ footer {
 }
 
 @media (max-width: 480px) {
+  .how-steps {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .how-notice {
+    flex-direction: column;
+    padding: 24px;
+  }
+
   .services-grid {
     grid-template-columns: 1fr;
   }
